@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponentElement } from 'react'
 import styled from 'styled-components'
 
 const Title = styled.h1`
@@ -6,7 +6,4 @@ const Title = styled.h1`
   font-size: 50px;
 `
 
-export default () => <Title>My page</Title>
-
-// const test = () => <img src="" />
-// test
+export default (): FunctionComponentElement<{}> => <Title>Hello, world!</Title>
