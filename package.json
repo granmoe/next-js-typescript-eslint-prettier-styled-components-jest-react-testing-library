@@ -13,7 +13,7 @@
     }
   },
   "lint-staged": {
-    "*.(tsx?|jsx?|json|md)": [
+    "*.(ts|tsx|js|jsx|json|md)": [
       "prettier",
       "eslint",
       "git add"
