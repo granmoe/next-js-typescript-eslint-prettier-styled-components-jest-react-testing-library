@@ -7,3 +7,5 @@ const Title = styled.h1`
 `
 
 export default () => <Title>My page</Title>
+
+// const test = () => <img src="" />
