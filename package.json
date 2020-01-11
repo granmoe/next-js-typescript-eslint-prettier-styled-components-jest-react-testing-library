@@ -6,6 +6,24 @@
     "build": "next build",
     "start": "next start"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+  "lint-staged": {
+    "*.(js|json|md)": [
+      "prettier",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
   "dependencies": {
     "next": "latest",
     "react": "16.8.6",
@@ -18,6 +36,9 @@
     "@types/react-dom": "16.8.4",
     "@types/styled-components": "4.1.16",
     "babel-plugin-styled-components": "^1.10.0",
+    "husky": "^4.0.6",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
     "typescript": "3.5.2"
   },
   "license": "ISC"
